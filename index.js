@@ -1,7 +1,7 @@
 let express = require('express')
 let requestBody = require('./requestBody')
 
-app = express()
+let app = express()
 
 let arrayUserId = []
 
@@ -26,7 +26,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/msg', (req, res) => {
-  messageId = req.query.msgId
+  let messageId = req.query.msgId
   console.log(messageId)
   res.json({code: 0})
 })
