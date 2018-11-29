@@ -1,5 +1,6 @@
 let express = require('express')
 let requestBody = require('./requestBody')
+require('dotenv').config()
 
 let app = express()
 
