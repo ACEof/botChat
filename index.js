@@ -25,6 +25,12 @@ app.get('/', (req, res) => {
 
 })
 
+app.get('/msg', (req, res) => {
+  messageId = req.query.msgId
+  console.log(messageId)
+  res.json({code: 0})
+})
+
 app.listen(8000, () => {
   console.log('Server working')
 })
